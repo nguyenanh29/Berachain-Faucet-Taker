@@ -11,7 +11,7 @@ function checkWebsite(address, callback) {
     })
     .then((browser) => {
       browser.newPage().then((page) => {
-        page.goto('https://artio.faucet.berachain.com/').then(() => {
+        page.goto('https://bartio.faucet.berachain.com/').then(() => {
           const termsCheckboxSelector = '#terms';
           page.waitForSelector(termsCheckboxSelector).then(() => {
             page.click(termsCheckboxSelector).then(() => {
